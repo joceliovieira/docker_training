@@ -22,16 +22,13 @@ Fonte: [_Docker Documentation - Overview_](https://docs.docker.com/get-started/o
 
 ## Arquitetura - Componentes básicos
 
-<div style="text-align: center;">
-
 ![](/img/docker-architecture.svg "Arquitetura Docker")
-<figcaption>
-Figura 1:  Arquitetura Docker
 
-Fonte: [_Docker Documentation - Overview_](https://docs.docker.com/get-started/overview/)
-</figcaption>
+<center>
+  Figura 1:  Arquitetura Docker<br>
+  <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation - Overview</a> 
+</center>
 
-</div>
 
 ### Docker 
 
