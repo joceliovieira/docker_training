@@ -21,14 +21,11 @@ Fonte: [_Docker Documentation - Overview_](https://docs.docker.com/get-started/o
 
 
 ## Arquitetura - Componentes básicos
-
-![](/img/docker-architecture.svg "Arquitetura Docker")
-
-<center>
+<p align="center">
+  <img width="" src="/img/docker-architecture.svg" alt="Arquitetura Docker">
   Figura 1:  Arquitetura Docker<br>
-  <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation - Overview</a> 
-</center>
-
+  Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation - Overview</a>   
+</p>
 
 ### Docker 
 
@@ -54,16 +51,12 @@ _The main role of server is to provide services and main role of client is to co
 Fonte: [Medium - Simple Introduction to Client-Server Architecture Concept](https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d)
 
 
-<div style="text-align: center;">
+<p align="center">
+  <img width="" src="/img/client-server-model.jpeg" alt="Arquitetura Docker">
+  Figura 2:  Modelo Cliente-servidor<br>
+  Fonte: <a href="https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d" target="_blank">Medium - Simple Introduction to Client-Server Architecture Concept</a>   
+</p>
 
-![](/img/client-server-model.jpeg "Arquitetura Docker")
-<figcaption>
-Figura 1:  Arquitetura Docker
-
-Fonte: [Medium - Simple Introduction to Client-Server Architecture Concept](https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d)
-</figcaption>
-
-</div>
 
 #### Docker Client
 
@@ -101,17 +94,11 @@ Algumas características dos contêineres:
 
 
 ### Recapitulando - Arquitetura ecossistema Docker
-
-<div style="text-align: center;">
-
-![](/img/docker-architecture.svg "Arquitetura Docker")
-<figcaption>
-Figura 2:  Arquitetura Docker
-
-Fonte: [_Docker Documentation - Overview_](https://docs.docker.com/get-started/overview/)
-</figcaption>
-
-</div>
+<p align="center">
+  <img width="" src="/img/docker-architecture.svg" alt="Arquitetura Docker">
+  Figura 3:  Arquitetura Docker<br>
+  Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation - Overview</a>   
+</p>
 
 #### Exemplo - Fluxo de processos
 
