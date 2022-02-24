@@ -15,7 +15,7 @@ Fonte: [_Docker Documentation - Overview_](https://docs.docker.com/get-started/o
 
 ## Docker vs. Virtual Machines
 ### Virtual Machine
-Referência 1: [Red Hat: What is a virtual machine (VM)?](https://www.redhat.com/en/topics/virtualization/what-is-a-virtual-machine)
+Referência 1: [Red Hat: What is a virtual machine (VM)?](https://www.redhat.com/en/topics/virtualization/what-is-a-virtual-machine)\
 Referência 2: [Docker: What is a container](https://www.docker.com/resources/what-container)
 
 _A virtual machine (VM) is a virtual environment that functions as a virtual computer system with its own CPU, memory, network interface, and storage, created on a physical hardware system (located off- or on-premises). Software called a hypervisor separates the machine’s resources from the hardware and provisions them appropriately so they can be used by the VM._
@@ -27,7 +27,7 @@ _Virtualization technology allows you to share a system with many virtual enviro
 _When the VM is running and a user or program issues an instruction that requires additional resources from the physical environment, the hypervisor schedules the request to the physical system’s resources so that the virtual machine’s operating system and applications can access the shared pool of physical resources._
 
 ### Containers
-Fonte: [Red Hat: Understanding Linux containers](https://www.redhat.com/en/topics/containers)
+Referência: [Red Hat: Understanding Linux containers](https://www.redhat.com/en/topics/containers)
 
 _Linux containers are technologies that allow you to package and isolate applications with their entire runtime environment—all of the files necessary to run. This makes it easy to move the contained application between environments (dev, test, production, etc.) while retaining full functionality._
 
@@ -47,9 +47,11 @@ Nas VMs há a virtualização do sistema completo, incluindo a virtualização a
 
 No caso dos contêineres, é virtualizado apenas o núcleo de interesse à aplicação desenvolvida, isto é, há uma virtualização apenas do sistema operacional envolvido na aplicação e suas dependências. Dessa forma, além de apresentar menos peso computacional e necessidade de recursos, traz a possibilidade de desenvolvimento da aplicação através de componentes independentes, encapsulados em diferentes contêineres, apresentando modularidade de forma semelhante às arquiteturas de microsserviços. Portanto, seria reduzida a necessidade de recursos computacionais, além de apresentar independência entre tais componentes da aplicação, facilitando a manutenção do sistema e afins.
 
-
-![](/treinamento_docker\img\containers-vs-virtual-machines.png)
-Fonte: [BMC Blog - Virtual Machines (VMs) vs Containers: What’s The Difference?](https://www.bmc.com/blogs/containers-vs-virtual-machines/)
+<p align="center">
+  <img width="" src="img/containers-vs-virtual-machines.png" alt="VM vs Container">
+  Figura 1:  Arquitetura Docker<br>
+  Fonte: <a href="https://www.bmc.com/blogs/containers-vs-virtual-machines/" target="_blank">BMC Blog - Virtual Machines (VMs) vs Containers: What’s The Difference?</a>   
+</p>
 
 
 ## Docker: Arquitetura
