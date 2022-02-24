@@ -295,7 +295,4 @@ Para parar a aplicação, utiliza-se o seguinte comando.
 
 
 ## Hands-on! :hand:
-
-:bowtie:
-
 Agora, é hora de seguir com a implementação dos conceitos apresentados.
