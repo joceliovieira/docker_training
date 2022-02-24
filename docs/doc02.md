@@ -48,7 +48,7 @@ Nas VMs há a virtualização do sistema completo, incluindo a virtualização a
 No caso dos contêineres, é virtualizado apenas o núcleo de interesse à aplicação desenvolvida, isto é, há uma virtualização apenas do sistema operacional envolvido na aplicação e suas dependências. Dessa forma, além de apresentar menos peso computacional e necessidade de recursos, traz a possibilidade de desenvolvimento da aplicação através de componentes independentes, encapsulados em diferentes contêineres, apresentando modularidade de forma semelhante às arquiteturas de microsserviços. Portanto, seria reduzida a necessidade de recursos computacionais, além de apresentar independência entre tais componentes da aplicação, facilitando a manutenção do sistema e afins.
 
 <p align="center">
-  <img width="" src="img/containers-vs-virtual-machines.png" alt="VM vs Container">
+  <img width="" src="/img/containers-vs-virtual-machines.png" alt="VM vs Container">
   Figura 1:  Arquitetura Docker<br>
   Fonte: <a href="https://www.bmc.com/blogs/containers-vs-virtual-machines/" target="_blank">BMC Blog - Virtual Machines (VMs) vs Containers: What’s The Difference?</a>   
 </p>
