@@ -238,6 +238,9 @@ Exemplo com passo a passo: [Get started with Docker Compose](https://docs.docker
 
 #### Docker Compose
 Ref.: [Docker Compose Overview](https://docs.docker.com/compose/)\
+Ref.: [docker-compose file](https://docs.docker.com/compose/compose-file/compose-file-v3)
+
+
 Def.: Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
 
 Etapas da utilização do Docker Compose para criação e implementação de uma aplicação multi-container:

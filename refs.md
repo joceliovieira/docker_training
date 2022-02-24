@@ -7,6 +7,7 @@
 - [Docker Documentation: Overview](https://docs.docker.com/get-started/overview/)
 - [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 - [Docker Compose](https://docs.docker.com/compose/)
+- [docker-compose file](https://docs.docker.com/compose/compose-file/compose-file-v3)
 - [Docker Run](https://docs.docker.com/engine/reference/commandline/run/)
 - [IBM Docs: Processes](https://www.ibm.com/docs/en/aix/7.2?topic=processes-)
 - [IBM Docs: The client/server model](https://www.ibm.com/docs/en/txseries/8.1.0?topic=computing-clientserver-model)
