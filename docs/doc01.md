@@ -2,15 +2,16 @@
 Autor: Jocélio Vieira
 
 ## Objetivo
-O objetivo do treinamento é demonstrar uma visão prática da tecnologia de conteinrização disponibilizada através da ferramenta Docker. Este treinamento tem como base, em grande parte, a documentação oficial do Docker.
+O objetivo do treinamento é demonstrar uma visão prática da tecnologia de conteinerização disponibilizada através da ferramenta Docker. Este treinamento tem como base, em grande parte, a documentação oficial do Docker.
 
-Fonte: [_Docker Documentation - Overview_](https://docs.docker.com/get-started/overview/)
+Fonte: [Docker Documentation: Overview](https://docs.docker.com/get-started/overview/)
 
 
-## Descrição Oficial 
+## Docker: Descrição 
 
-"_Docker is an open platform for developing, shipping, and running applications._" \
-"_Docker enables you to separate your applications from your infrastructure so you can deliver software quickly._" \
+"_Docker is an open platform for developing, shipping, and running applications._" 
+
+"_Docker enables you to separate your applications from your infrastructure so you can deliver software quickly._" 
 
 
 ## Docker vs. Virtual Machines
@@ -34,14 +35,17 @@ _Linux containers are technologies that allow you to package and isolate applica
 _Linux containers help reduce conflicts between your development and operations teams by separating areas of responsibility._ 
 
 #### Docker
-"_Docker provides the ability to package and run an application in a loosely isolated environment called a container._" \
-"_Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host._" \
+
+"_Docker provides the ability to package and run an application in a loosely isolated environment called a container._"
+
+"_Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host._"
+
 "_You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way._"
 
-"_With Docker, you can manage your infrastructure in the same ways you manage your applications._" \
+"_With Docker, you can manage your infrastructure in the same ways you manage your applications._"
 
 ### Docker vs. VM
-Recomendação: [Vídeo - IBM Technology: Containers vs VMs](https://www.youtube.com/watch?v=cjXI-yxqGTI)
+Recomendação - vídeo: [IBM Technology: Containers vs VMs](https://www.youtube.com/watch?v=cjXI-yxqGTI)
 
 Nas VMs há a virtualização do sistema completo, incluindo a virtualização a nível de hardware, onde o hypervisor é responsável por administrar as VMs que operam na máquina host. Por apresentar virtualização do sistema completo, incluindo todos os seus programas 'base' e afins, apresenta um certo peso computacional. Além disso, é usual que aplicações desenvolvidas com utilização de VM opere em uma VM única, de forma que todos os componentes desta aplicação operem em um único ambiente de forma semelhante ao tipo de arquitetura monolítica. Isto pode levar a problemas, por exemplo, no caso de um dos componentes do software apresentar algum problema. Desta forma, para resolver este problema, toda a aplicação sofreria interferÊncia, uma vez que todos os componentes operam em um ambiente comum.
 
@@ -49,16 +53,16 @@ No caso dos contêineres, é virtualizado apenas o núcleo de interesse à aplic
 
 <p align="center">
   <img width="" src="/img/containers-vs-virtual-machines.png" alt="VM vs Container">
-  Figura 1:  Arquitetura Docker<br>
-  Fonte: <a href="https://www.bmc.com/blogs/containers-vs-virtual-machines/" target="_blank">BMC Blog - Virtual Machines (VMs) vs Containers: What’s The Difference?</a>   
+  Figura 1:  Docker vs. VM<br>
+  Fonte: <a href="https://www.bmc.com/blogs/containers-vs-virtual-machines/" target="_blank">BMC Blog: Virtual Machines (VMs) vs Containers: What’s The Difference?</a>   
 </p>
 
 
 ## Docker: Arquitetura
 <p align="center">
   <img width="" src="/img/docker-architecture.svg" alt="Arquitetura Docker">
-  Figura 1:  Arquitetura Docker<br>
-  Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation - Overview</a>   
+  Figura 2:  Arquitetura Docker<br>
+  Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation: Overview</a>   
 </p>
 
 
@@ -66,30 +70,29 @@ No caso dos contêineres, é virtualizado apenas o núcleo de interesse à aplic
 ### Docker Daemon
 #### Process
 Def.: "_A program or command that is actually running on the computer is referred to as a process._"\
-Fonte: [IBM](https://www.ibm.com/docs/en/aix/7.2?topic=processes-)
+Fonte: [IBM Docs: Processes](https://www.ibm.com/docs/en/aix/7.2?topic=processes-)
 
 #### Daemon Process
 Def.: _Daemons are processes that run unattended. __They are constantly in the background and are available at all times__. Daemons are usually started when the system starts, and they run until the system stops. A daemon process typically performs system services and is available at all times to more than one task or user. For example, the qdaemon process provides access to system resources such as printers. Another common daemon is the sendmail daemon._\
-[Fonte: IBM](https://www.ibm.com/docs/en/aix/7.2?topic=processes-)
+Fonte: [IBM Docs: Processes](https://www.ibm.com/docs/en/aix/7.2?topic=processes-)
 
 #### Docker Daemon
 _The Docker daemon listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes._
-
 
 ### Docker Client
 
 #### Client-Server Model
 _A __client__ is a program that uses services that other programs provide. The programs that provide the services are called __servers__. The client makes a request for a service, and a server performs that service. Client programs typically handle user interactions and often request data or initiate some data modification on behalf of a user._\
-Fonte: [IBM](https://www.ibm.com/docs/en/txseries/8.1.0?topic=computing-clientserver-model)
+Fonte: [IBM Docs: The client/server model](https://www.ibm.com/docs/en/txseries/8.1.0?topic=computing-clientserver-model)
 
 _The main role of server is to provide services and main role of client is to consume services._\
-Fonte: [Medium - Simple Introduction to Client-Server Architecture Concept](https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d)
+Fonte: [Medium: Simple Introduction to Client-Server Architecture Concept](https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d)
 
 
 <p align="center">
   <img width="" src="/img/client-server-model.jpeg" alt="Arquitetura Docker">
-  Figura 2:  Modelo Cliente-servidor<br>
-  Fonte: <a href="https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d" target="_blank">Medium - Simple Introduction to Client-Server Architecture Concept</a>   
+  Figura 3:  Modelo Cliente-servidor<br>
+  Fonte: <a href="https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d" target="_blank">Medium: Simple Introduction to Client-Server Architecture Concept</a>   
 </p>
 
 
@@ -103,16 +106,16 @@ _When you use commands such as docker run, the client sends these commands to do
 _A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry._\
 _When you use the docker pull or docker run commands, the required images are pulled from your configured registry. When you use the docker push command, your image is pushed to your configured registry._
 
-### Docker objects
+## Docker objects
 
 _When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects._
 
-#### Images
+### Images
 _An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run._
 
 _You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image. When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt. This is part of what makes images so lightweight, small, and fast, when compared to other virtualization technologies._
 
-#### Containers
+### Containers
 
 _A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state._
 
@@ -128,21 +131,23 @@ Algumas características dos contêineres:
 - Containers are isolated from each other and run their own software, binaries, and configurations.
 
 
-### Recapitulando - Arquitetura ecossistema Docker
+## Recapitulando - Arquitetura ecossistema Docker
 <p align="center">
   <img width="" src="/img/docker-architecture.svg" alt="Arquitetura Docker">
-  Figura 3:  Arquitetura Docker<br>
-  Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation - Overview</a>   
+  Figura 4:  Arquitetura Docker<br>
+  Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation: Overview</a>   
 </p>
 
-#### Exemplo - Fluxo de processos
+## Exemplo - Fluxo de processos
 
 The following command runs an ubuntu container, attaches interactively to your local command-line session, and runs /bin/bash.
 
 ```
 docker run -i -t ubuntu /bin/bash
 ```
-Ref: ``` docker run [OPTIONS] IMAGE [COMMAND] [ARG...] ```
+``` docker run [OPTIONS] IMAGE [COMMAND] [ARG...] ```
+
+Ref.: [Docker Run](https://docs.docker.com/engine/reference/commandline/run/)
 
 When you run this command, the following happens (assuming you are using the default registry configuration):
 
@@ -172,7 +177,8 @@ Para implementar uma aplicação simples, pode-se utilizar o próprio Docker Cli
 #### Comando: ___docker run___
 
     docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
-Referência: [Documentação Oficial - docker run](https://docs.docker.com/engine/reference/commandline/run/)
+
+Referência: [Documentação: docker run](https://docs.docker.com/engine/reference/commandline/run/)
 
 The docker run command first creates a writeable container layer over the specified image, and then starts it using the specified command. That is, docker run is equivalent to the API /containers/create then /containers/(id)/start.\
 A stopped container can be restarted with all its previous changes intact using docker start. See docker ps -a to view a list of all containers.
@@ -181,7 +187,7 @@ Mais um exemplo de utilização do Docker Client para 'subir' um container.
 
     docker run -d -p 80:80 docker/getting-started
 
-#### Flags
+##### Flags
 
     -d - run the container in detached mode (in the background)
 
@@ -198,8 +204,9 @@ Docker builds images automatically by reading the instructions from a Dockerfile
 
 Exemplo de um dockerfile:
 
+"_In this step, you write a Dockerfile that builds a Docker image. The image contains all the dependencies the Python application requires, including Python itself._"
+
 ```dockerfile
-# syntax=docker/dockerfile:1
 FROM python:3.7-alpine
 WORKDIR /code
 ENV FLASK_APP=app.py
@@ -211,6 +218,8 @@ EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
 ```
+Fonte: [Get started with Docker Compose](https://docs.docker.com/compose/gettingstarted/)
+
 
 This tells Docker to:
 
@@ -249,6 +258,9 @@ services:
   redis:
     image: "redis:alpine"
 ```
+
+The web service uses an image that’s built from the Dockerfile in the current directory.
+
 
 No caso da aplicação a ser desenvolvida, incluindo Grafana para visualização de dados e InfluxDB para armazenamento, pode-se definir o seguinte docker-compose.yml. 
 
