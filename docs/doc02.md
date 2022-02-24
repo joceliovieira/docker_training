@@ -250,7 +250,9 @@ services:
     image: "redis:alpine"
 ```
 
-No caso da aplicação a ser desenvolvida, incluindo Grafana para visualização de dados e InfluxDB para armazenamento, pode-se definir o seguinte docker-compose.yml.
+No caso da aplicação a ser desenvolvida, incluindo Grafana para visualização de dados e InfluxDB para armazenamento, pode-se definir o seguinte docker-compose.yml. 
+
+Este yml foi desenvolvido pelo professor Lucas Hartmann (UFPB).
 
 ```yml
 version: "3" # opcional
