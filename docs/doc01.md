@@ -52,7 +52,7 @@ Nas VMs há a virtualização do sistema completo, incluindo a virtualização a
 No caso dos contêineres, é virtualizado apenas o núcleo de interesse à aplicação desenvolvida, isto é, há uma virtualização apenas do sistema operacional envolvido na aplicação e suas dependências. Dessa forma, além de apresentar menos peso computacional e necessidade de recursos, traz a possibilidade de desenvolvimento da aplicação através de componentes independentes, encapsulados em diferentes contêineres, apresentando modularidade de forma semelhante às arquiteturas de microsserviços. Portanto, seria reduzida a necessidade de recursos computacionais, além de apresentar independência entre tais componentes da aplicação, facilitando a manutenção do sistema e afins.
 
 <p align="center">
-  <img width="" src="/img/containers-vs-virtual-machines.png" alt="VM vs Container">
+  <img width="" src="/docs/img/containers-vs-virtual-machines.png" alt="VM vs Container">
   Figura 1:  Docker vs. VM<br>
   Fonte: <a href="https://www.bmc.com/blogs/containers-vs-virtual-machines/" target="_blank">BMC Blog: Virtual Machines (VMs) vs Containers: What’s The Difference?</a>   
 </p>
@@ -60,7 +60,7 @@ No caso dos contêineres, é virtualizado apenas o núcleo de interesse à aplic
 
 ## Docker: Arquitetura
 <p align="center">
-  <img width="" src="/img/docker-architecture.svg" alt="Arquitetura Docker">
+  <img width="" src="/docs/img/docker-architecture.svg" alt="Arquitetura Docker">
   Figura 2:  Arquitetura Docker<br>
   Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation: Overview</a>   
 </p>
@@ -90,7 +90,7 @@ Fonte: [Medium: Simple Introduction to Client-Server Architecture Concept](https
 
 
 <p align="center">
-  <img width="" src="/img/client-server-model.jpeg" alt="Arquitetura Docker">
+  <img width="" src="/docs/img/client-server-model.jpeg" alt="Arquitetura Docker">
   Figura 3:  Modelo Cliente-servidor<br>
   Fonte: <a href="https://nimesha-dilini.medium.com/simple-introduction-to-client-server-architecture-concept-7d2979bed31d" target="_blank">Medium: Simple Introduction to Client-Server Architecture Concept</a>   
 </p>
@@ -133,7 +133,7 @@ Algumas características dos contêineres:
 
 ## Recapitulando - Arquitetura ecossistema Docker
 <p align="center">
-  <img width="" src="/img/docker-architecture.svg" alt="Arquitetura Docker">
+  <img width="" src="/docs/img/docker-architecture.svg" alt="Arquitetura Docker">
   Figura 4:  Arquitetura Docker<br>
   Fonte: <a href="https://docs.docker.com/get-started/overview/" target="_blank">Docker Documentation: Overview</a>   
 </p>
