@@ -1,5 +1,5 @@
 # Treinamento Docker
-Autor: Jocélio Vieira
+Autor: [Jocélio Vieira](https://github.com/joceliovieira)
 
 ## Objetivo
 O objetivo do treinamento é demonstrar uma visão prática da tecnologia de conteinerização disponibilizada através da ferramenta Docker, assim como provocar o interesse sobre essa tecnologia no desenvolvimento de software .
