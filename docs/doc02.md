@@ -294,9 +294,7 @@ Para parar a aplicação, utiliza-se o seguinte comando.
     docker-compose down
 
 
-## Hands-on! 
-
-:hand:
+## Hands-on! :hand:
 
 :bowtie:
 
