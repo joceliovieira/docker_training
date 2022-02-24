@@ -314,6 +314,7 @@ Agora, é hora de seguir com a implementação dos conceitos apresentados.
 ### Snippets
 - Obtenção de IP do container: ```hostname -I ```
 - Instalação do cliente InfluxDB - Python: ```pip install influxdb-client ```
+- Acessando o bash de um container: ``` docker exec -it {container_name} bash```
 
 ### Configuração InfluxDB como datasource no Grafana
 - Query language: Flux
