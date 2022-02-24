@@ -233,7 +233,7 @@ This tells Docker to:
 - Set the default command for the container to flask run.
 
 ### Aplicação multi-container
-Como já fora exposto, para implementação de uma aplicação multi-container, será utilizada a ferramenta Docker Dompose.
+Como já fora exposto, para implementação de uma aplicação multi-container, será utilizada a ferramenta Docker Compose.
 Exemplo com passo a passo: [Get started with Docker Compose](https://docs.docker.com/compose/gettingstarted/)
 
 #### Docker Compose
