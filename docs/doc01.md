@@ -310,3 +310,17 @@ Para parar a aplicação, utiliza-se o seguinte comando.
 
 ## Hands-on! :hand:
 Agora, é hora de seguir com a implementação dos conceitos apresentados.
+
+### Snippets
+- Obtenção de IP do container: ```hostname -I ```
+- Instalação do cliente InfluxDB - Python: ```pip install influxdb-client ```
+
+### Configuração InfluxDB como datasource no Grafana
+- Query language: Flux
+  - HTTP - 
+	  - URL: endereço do banco de dados. No caso, será o IP no formato "http://{ip}:{porta}"  -  usar ``` hostname -I ```
+    - Basic Auth details: usuario e senha do influxdb - configurado no primeiro acesso do influxdb
+  - InfluxDB Details:
+	  - Organization: id da organização, e não o nome
+	  - Token
+	  - Default bucket: string no formato {nome_do_banco}
