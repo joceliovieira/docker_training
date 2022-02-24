@@ -139,7 +139,10 @@ Algumas características dos contêineres:
 
 The following command runs an ubuntu container, attaches interactively to your local command-line session, and runs /bin/bash.
 
-    docker run -i -t ubuntu /bin/bash
+```
+docker run -i -t ubuntu /bin/bash
+```
+Ref: ``` docker run [OPTIONS] IMAGE [COMMAND] [ARG...] ```
 
 When you run this command, the following happens (assuming you are using the default registry configuration):
 
@@ -291,5 +294,10 @@ Para parar a aplicação, utiliza-se o seguinte comando.
     docker-compose down
 
 
-## HANDS-ON!
+## Hands-on! 
+
+:hand:
+
+:bowtie:
+
 Agora, é hora de seguir com a implementação dos conceitos apresentados.
