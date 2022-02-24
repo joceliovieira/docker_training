@@ -1,0 +1,27 @@
+services:
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb_name
+    ports: 
+      - "8086:8086"
+    volumes:
+      - influxdb:/var/lib/influxdb
+      - ./influxdb.conf:/etc/influxdb/influxdb.conf:ro
+    restart: always
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana_name
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - grafana-conf:/etc/grafana
+      - grafana-logs:/var/log/grafana
+    ports: 
+      - "3000:3000"
+    restart: always
+
+volumes:
+  influxdb:
+  grafana-data:
+  grafana-conf:
+  grafana-logs:
